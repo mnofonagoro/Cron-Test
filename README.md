@@ -27,6 +27,7 @@ For example, `py app.py 16:10 < config.txt` will output:
 * `cd` into `Lyst`
 * Depending on the version of Python you have, use the command `python`, `python3` or `py` to run the `app.py` script:
     * For example, `py app.py 16:10 < config.txt`
+    * You can enter any time between 00:00 and 23:59
 
 ## If I Had More Time
 * Create more consistency when printing the hour (e.g. depending on user input, the program will output 09:45 or 9:45)

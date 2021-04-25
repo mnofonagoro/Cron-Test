@@ -23,7 +23,7 @@ For example, `py app.py 16:10 < config.txt` will output:
 19:00 today - /bin/run_me_sixty_times
 ```
 ## Running The Program
-* Unzip the file
+* Unzip the file / clone the repo
 * `cd` into `Lyst`
 * Depending on the version of Python you have, use the command `python`, `python3` or `py` to run the `app.py` script:
     * For example, `py app.py 16:10 < config.txt`
@@ -31,5 +31,5 @@ For example, `py app.py 16:10 < config.txt` will output:
 ## If I Had More Time
 * Create more consistency when printing the hour (e.g. depending on user input, the program will output 09:45 or 9:45)
 * Improve error handling + remove any unnecessary print statements
-* Refactor - put lines 97 - 107 in its own function
+* Refactor: put lines 97 - 107 in its own function
 * Unit test each function

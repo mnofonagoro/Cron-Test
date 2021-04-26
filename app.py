@@ -3,7 +3,7 @@ import os
 
 
 def main():
-    # Loops through every line in config.txt, and splits them into minute, hour and command    
+    # Loops through every line in config, and splits them into minute, hour and command    
     for schedule in sys.stdin:
         schedule_minute, schedule_hour, schedule_command = schedule.rstrip("\n").split(" ")
         
@@ -43,7 +43,7 @@ def run_me_daily(schedule_minute, schedule_hour, schedule_command):
     
     else:
         print("There has been an error")
-        
+    # Return to main() to continue the for loop
     return main()
 
 
@@ -66,7 +66,7 @@ def run_me_hourly(schedule_minute, schedule_command):
 
 
 def run_me_every_minute(schedule_command):
-    # Will always print put the current time
+    # Will always print out the current time
     print("{}:{} today - {}".format(input_hour, input_minute, schedule_command))
     
     return main()

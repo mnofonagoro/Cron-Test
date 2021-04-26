@@ -15,7 +15,7 @@ The first field is the minute past the hour, the second field is the hour of the
 
 The task is to write a command line program that takes a single argument. This argument is the simulated 'current time' in the format HH:MM. The program should accept config lines in the form above to **STDIN** and output the soonest time at which each of the commands will fire and whether it is today or tomorrow. In the case when the task should fire at the simulated 'current time', then that is the time the program should output, not the next one.
 
-For example, `py app.py 16:10 < config.txt` will output:
+For example, `python app.py 16:10 < config` will output:
 ```
 1:30 tomorrow - /bin/run_me_daily 
 16:45 today - /bin/run_me_hourly
@@ -23,10 +23,17 @@ For example, `py app.py 16:10 < config.txt` will output:
 19:00 today - /bin/run_me_sixty_times
 ```
 ## Running The Program
-* Unzip the file / clone the repo
-* `cd` into `Lyst`
+### From the zip file
+* Unzip the file
+* `cd` into `Lyst` if you're not already in the root of the project
 * Depending on the version of Python you have, use the command `python`, `python3` or `py` to run the `app.py` script:
-    * For example, `py app.py 16:10 < config.txt`
+    * For example, `python app.py 16:10 < config`
+    * You can enter any time between 00:00 and 23:59
+### From GitHub
+* Clone the repo
+* `cd` into `Cron-Test` if you're not already in the root of the project
+* Depending on the version of Python you have, use the command `python`, `python3` or `py` to run the `app.py` script:
+    * For example, `python app.py 16:10 < config`
     * You can enter any time between 00:00 and 23:59
 
 ## If I Had More Time

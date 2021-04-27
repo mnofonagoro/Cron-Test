@@ -40,4 +40,4 @@ For example, `python app.py 16:10 < config` will output:
 * Create more consistency when printing the hour (e.g. depending on user input, the program will output 09:45 or 9:45)
 * Improve error handling + remove any unnecessary print statements
 * Refactor: put lines 97 - 107 in its own function
-* Unit test each function
+* Unit test each function 

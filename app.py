@@ -91,7 +91,7 @@ def run_me_sixty_times(schedule_hour, schedule_command):
 
 if __name__ == '__main__':
     # sys.argv are the command line arguments 
-    # sys.argv[0] is the file name, so sys.argv[1] is the HH:MM input
+    # sys.argv[0] is the file name, so sys.argv[1] is the HH:MM input 
     input_time = sys.argv[1]
     try:
         # Splitting time into hours and minutes, and catching input errors
